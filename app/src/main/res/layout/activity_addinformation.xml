@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_VehicalInfomation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vechical Infomation"
+        android:textColor="@color/blue"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:layout_marginTop="45dp"/>
+
+
+    <ImageView
+        android:id="@+id/image_View"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/txt_VehicalInfomation"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_camera_alt_black_24dp"/>
+
+    <EditText
+        android:id="@+id/txt_VehicalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_View"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Vehical Name"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:background="@drawable/txtbackground"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/txt_ModelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_VehicalName"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Vehical Model"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:background="@drawable/txtbackground"
+        android:textSize="18sp"/>
+
+
+    <EditText
+        android:id="@+id/txt_Varent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_ModelName"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Varent"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:background="@drawable/txtbackground"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/txt_fuelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_Varent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Fuel Type"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:background="@drawable/txtbackground"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_AddInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_fuelType"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:text="Add Information"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/background"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
